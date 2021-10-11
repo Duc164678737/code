@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Đệm-viền-Khoảng lề</title>
+        <meta charset="urf=8">
+        <style>
+            html,body{
+                margin: 0;
+            }
+            .box {
+                width: 60px;
+                height: 60px;
+                color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                /* 
+                float: left;
+                Đặt 3 cái Box trên cùng 1 hàng ngang
+                */
+            }
+            .box1 {
+                background: #333;
+                margin-left: 20px;
+            }
+            .box2 {
+                background: orange;
+                padding: 10px;
+                /*  
+                Là cái mà ôm đối tượng element nên là nét liền
+                border-width: 3px;
+                border-style: solid;
+                border-color: #333;
+                */
+
+                border: 2px solid #444;
+                margin: 20px;
+                
+            }
+            .box3 {
+                background: firebrick;
+                padding: 10px 12px 8px 5px;
+                /* làm cho element dày lên */
+                margin-top: 30px; 
+                /* Là khoảng cách đẩy ra từ element */
+
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 1</div>
+        <div class="box box3">Box 3</div>
+    </body>
+</html>

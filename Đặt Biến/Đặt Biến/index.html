@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>F8</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="main.css">
+
+        <style>
+            .box {
+                /* width: 50%; */
+                width: calc(60% + 100px);
+                height: 100px;
+                background-color: rgb(200, 241, 18);
+            }
+            h1 {
+                font-size: 2em;
+            }
+            .box::after {
+                /* content: "xin chao cac ban"; */
+                content: attr(Ten-title);
+            }
+            a::after {
+                content: " ("attr(href)")";
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- <div class="box" title="Đây là box màu "></div> -->
+        <div class="box" Ten-title="Đây là box màu"></div>
+
+        <a href="https://fullstack.edu.vn">Hoc lap trinh</a>
+        <div>
+            <h1>CSS units?</h1>
+            <h2>1. Absolute units</h2>
+            <ul>
+                <li>px</li>
+                <li>pt</li>
+                <li>cm</li>
+                <li>mm</li>
+                <li>inch</li>
+            </ul>
+            <ul>
+                <li>var()</li>
+                <li>linear-gradient()</li>
+                <li>rgba()</li>
+                <li>rgb()</li>
+                <li>calc()</li>
+                <li>attr()</li>
+
+            </ul>
+        </div>
+    </body>
+
+    <!-- <body>
+        <div>
+            <h1> CSS variable ?</h1>
+            <h2> CSS </h2>
+        </div>
+    </body> -->
+</html>

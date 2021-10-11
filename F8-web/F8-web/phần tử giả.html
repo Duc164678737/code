@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lớp giả</title>
+        <meta charset="utf-8">
+        <style>
+            html,body {
+                margin: 0;
+            }
+            .box {
+                width: 100%;
+                height: 120px;
+                background: rgb(200, 150,250);
+            }
+
+            .box::before {
+                content: "";
+                display: block; 
+                /* vì là phần tử giả nên phải khai báo displasy: block--> hình khối */
+                width: 50px;
+                height: 50px;
+                background-color: #fff;
+            }
+            /* Mỗi element chỉ tồn tại 1 before và after */
+            .box::after {
+                content: "Hello";
+                color: yellow;
+                display: block; 
+                /* vì là phần tử giả nên phải khai báo displasy: block--> hình khối */
+                width: 50px;
+                height: 50px;
+                background-color: #fff;
+            }
+
+            h1::first-letter {
+                font-size: 50px;
+            }
+            h1::first-line {
+                color: yellowgreen;
+            }
+            h2::selection {
+                background-color: violet ;
+                color: black;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="box">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <h1>Phần Tử Giả <br/> Dòng thứ 2</h1>
+        <h2>Selection</h2>
+
+        <ul>
+            <li>::before</li>
+            <li>::after</li>
+            <li>::first-letter</li>
+            <li>::first-line</li>
+            <li>::selection</li>
+        </ul>
+    </body>
+</html>
